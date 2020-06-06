@@ -4,7 +4,7 @@ import { Author } from './author'
 import { Note } from './note'
 import { Revision } from './revision'
 import { Temp } from './temp'
-import { User } from './user'
+import { User } from './user/User'
 import { logger } from '../logger'
 import { config } from '../config'
 
