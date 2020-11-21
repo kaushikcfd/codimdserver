@@ -571,7 +571,8 @@ export default class Editor {
           let indentLength = match[2].length + 1
           let wrapOptions = {
             wrapOn: /\s\S/,
-            column: hardWrapColumn - indentLength
+            column: hardWrapColumn - indentLength,
+            forceBreak: false
           }
 
           cm.wrapRange(from, initCursor, wrapOptions)
@@ -587,7 +588,8 @@ export default class Editor {
           let indentLength = match[2].length + 1
           let wrapOptions = {
             wrapOn: /\s\S/,
-            column: hardWrapColumn - indentLength
+            column: hardWrapColumn - indentLength,
+            forceBreak: false
           }
 
           cm.wrapRange(from, initCursor, wrapOptions)
@@ -605,7 +607,8 @@ export default class Editor {
         } else {
           let wrapOptions = {
             wrapOn: /\s\S/,
-            column: hardWrapColumn
+            column: hardWrapColumn,
+            forceBreak: false
           }
           cm.wrapRange(from, initCursor, wrapOptions)
         }
